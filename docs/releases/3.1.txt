@@ -415,6 +415,14 @@ backends.
   yields a cursor and automatically closes the cursor and connection upon
   exiting the ``with`` statement.
 
+:attr:`AbstractUser.first_name <django.contrib.auth.models.User.first_name>` ``max_length`` increased to 150
+----------------------------------------------------------------------------------------------------------
+
+A migration for :attr:`django.contrib.auth.models.User.first_name` is included.
+If you have a custom user model inheriting from ``AbstractUser``, you'll need
+to generate and apply a database migration for your user model.
+
+
 Dropped support for MariaDB 10.1
 --------------------------------
 
